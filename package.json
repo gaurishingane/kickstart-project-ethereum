@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/gaurishingane/kickstart#readme",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.5.1",
+    "dotenv": "^10.0.0",
     "fs-extra": "^10.0.0",
     "ganache-cli": "^6.12.2",
     "mocha": "^9.1.3",
