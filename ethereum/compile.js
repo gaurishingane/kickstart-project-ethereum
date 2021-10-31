@@ -60,7 +60,7 @@ else{
         const contract = contracts[contractName];
         fs.writeFileSync(
             path.resolve(buildPath,`${contractName}.json`),
-            JSON.stringify(contract.abi,null,2),
+            JSON.stringify(contract,null,2),
             'utf8'
         );
 
