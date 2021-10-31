@@ -38,4 +38,15 @@ describe('Campaigns', () => {
         const isApprover = await campaign.methods.approvers(accounts[1]).call();
         assert(isApprover);
     });
+
+    it('checks for minimum contribution', async() => {
+        try {
+            await campaign.methods.contribute().send({ value:'5', from:accounts[1] });
+            assert(false);
+        }
+        catch(err){
+            assert(err);
+
+        }
+    });
 });
