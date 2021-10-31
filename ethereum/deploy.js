@@ -4,8 +4,6 @@ const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 const compiledCampaign = require('./build/Campaign.json');
 
-// const provider = new HDWalletProvider('start blast reward link cook retreat birth relief erase ice major autumn','https://rinkeby.infura.io/v3/c3cb91dafbf64140855d1849ee2fe6ee');
-
 const provider = new HDWalletProvider(process.env.MNEUMONIC,process.env.INFURA_ENDPOINT);
 const web3 = new Web3(provider);
 
